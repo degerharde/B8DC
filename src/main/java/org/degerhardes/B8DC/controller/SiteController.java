@@ -3,6 +3,7 @@ package org.degerhardes.B8DC.controller;
 import org.degerhardes.B8DC.service.DCService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -19,7 +20,14 @@ public class SiteController {
     }
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public ModelAndView allFilms() {
+    public ModelAndView showConvert() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("main");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/", method = RequestMethod.POST)
+    public ModelAndView getConvert(@ModelAttribute("convert") String inc){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("main");
         return modelAndView;
