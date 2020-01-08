@@ -8,11 +8,13 @@
 <body>
 <h2>INPUT:</h2>
 <br>
-<textarea name="incData" rows="50" cols="33" placeholder="Скопировать пакет сюда..."/>
+<textarea name="incData" rows="20" cols="60" placeholder="Скопировать пакет сюда..."/>
+</textarea>
 <br><br>
 <input type="submit" value="Send Request">
 <br><br>
 <h2>RESULT:</h2>
-<textarea name="incData" rows="50" cols="33" placeholder="Результат..." readonly/>
+<textarea name="incData" rows="20" cols="60" placeholder="Результат..." readonly/>
+</textarea>
 </body>
 </html>

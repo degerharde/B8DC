@@ -1,11 +1,10 @@
 package org.degerhardes.B8DC.model;
 
-import org.springframework.context.annotation.Bean;
-public class ConverterImpl implements Converter{
+import org.springframework.stereotype.Component;
 
-    @Override
+@Component
+public class ConverterImpl implements Converter{
     public String convertAndReturn(String inc) {
         return null;
     }
-
 }
