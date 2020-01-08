@@ -11,7 +11,7 @@
 <textarea name="incData" rows="20" cols="60" placeholder="Скопировать пакет сюда..."/>
 </textarea>
 <br><br>
-<input type="submit" value="Send Request">
+<input type="submit" value="Отправить">
 <br><br>
 <h2>RESULT:</h2>
 <textarea name="incData" rows="20" cols="60" placeholder="Результат..." readonly/>
