@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
@@ -22,14 +23,15 @@ public class SiteController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public ModelAndView showConvert() {
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("main");
+        modelAndView.setViewName("index");
         return modelAndView;
     }
 
     @RequestMapping(value = "/", method = RequestMethod.POST)
-    public ModelAndView getConvert(@ModelAttribute("convert") String inc){
+    public ModelAndView getConvert(@RequestParam("convert") String inc){
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("main");
+        modelAndView.setViewName("index");
+        modelAndView.addObject("outcome",dcService.convertAndReturn(inc));
         return modelAndView;
     }
 }

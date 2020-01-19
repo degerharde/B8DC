@@ -6,5 +6,6 @@ public class ConverterTemplateB8 implements ConverterTemplate {
     @Override
     public void convert(String[] arr) {
         System.out.println("B8 command acquired");
+        arr[0] = "test";
     }
 }
