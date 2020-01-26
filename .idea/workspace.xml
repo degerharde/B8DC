@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="03904c62-a7a7-4b5a-af56-a5f2722c8b87" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/controller/SiteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/controller/SiteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/ConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/ConverterImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/ConverterTemplateB8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/ConverterTemplateB8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/ConverterTemplateFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/ConverterTemplateFabric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/TemplateStaticMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/TemplateStaticMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/res/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/res/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +176,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578844681325</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Working View">
+      <created>1579451853537</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1579451853537</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Half B8 class">
+      <created>1580054948907</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1580054948907</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -183,9 +198,15 @@
     <MESSAGE value="WEB page backbone created. No logic, only working webapp." />
     <MESSAGE value="Bit CSS changes" />
     <MESSAGE value="Add Model with 2 Templates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Model with 2 Templates" />
+    <MESSAGE value="Working View" />
+    <MESSAGE value="Half B8 class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Half B8 class" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="275" y="0" width="816" height="728" key="#Intentions" timestamp="1579582784430">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="0" width="816" height="728" key="#Intentions/0.0.1366.728@0.0.1366.728" timestamp="1579582784430" />
     <state x="413" y="117" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1578502478904">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -198,42 +219,42 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1578514068090" />
-    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1578844678881">
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1580054942607">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1578844678881" />
-    <state width="1322" height="217" key="GridCell.Tab.0.bottom" timestamp="1579451589254">
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580054942607" />
+    <state width="1322" height="195" key="GridCell.Tab.0.bottom" timestamp="1580061545236">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="217" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579451589254" />
-    <state width="1322" height="217" key="GridCell.Tab.0.center" timestamp="1579451589253">
+    <state width="1322" height="195" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580061545236" />
+    <state width="1322" height="195" key="GridCell.Tab.0.center" timestamp="1580061545236">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="217" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1579451589253" />
-    <state width="1322" height="217" key="GridCell.Tab.0.left" timestamp="1579451589253">
+    <state width="1322" height="195" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580061545236" />
+    <state width="1322" height="195" key="GridCell.Tab.0.left" timestamp="1580061545236">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="217" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1579451589253" />
-    <state width="1322" height="217" key="GridCell.Tab.0.right" timestamp="1579451589254">
+    <state width="1322" height="195" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580061545236" />
+    <state width="1322" height="195" key="GridCell.Tab.0.right" timestamp="1580061545236">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="217" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1579451589254" />
-    <state width="1322" height="217" key="GridCell.Tab.1.bottom" timestamp="1579451589255">
+    <state width="1322" height="195" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580061545236" />
+    <state width="1322" height="217" key="GridCell.Tab.1.bottom" timestamp="1580057346484">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="217" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579451589255" />
-    <state width="1322" height="217" key="GridCell.Tab.1.center" timestamp="1579451589254">
+    <state width="1322" height="217" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580057346484" />
+    <state width="1322" height="217" key="GridCell.Tab.1.center" timestamp="1580057346484">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="217" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1579451589254" />
-    <state width="1322" height="217" key="GridCell.Tab.1.left" timestamp="1579451589254">
+    <state width="1322" height="217" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1580057346484" />
+    <state width="1322" height="217" key="GridCell.Tab.1.left" timestamp="1580057346484">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="217" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1579451589254" />
-    <state width="1322" height="217" key="GridCell.Tab.1.right" timestamp="1579451589255">
+    <state width="1322" height="217" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1580057346484" />
+    <state width="1322" height="217" key="GridCell.Tab.1.right" timestamp="1580057346484">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="217" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1579451589255" />
+    <state width="1322" height="217" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1580057346484" />
     <state x="213" y="17" key="Maven.ArtifactSearchDialog" timestamp="1578501471242">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

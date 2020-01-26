@@ -10,6 +10,7 @@ class TemplateStaticMethods {
     static int convertToDec(String s){
         return Integer.parseInt(s, 16);
     }
+
     static int[] getBits(String s){
         int[] tmp = new int[8];
         int num = convertToDec(s), bit = 1;
@@ -24,12 +25,9 @@ class TemplateStaticMethods {
         return Arrays.stream(getBits(s)).limit(5).sum();
     }
 
-    static int getTIDigitCap(String s){
-        int res;
+    static boolean getTIDigitCap(String s){
         int[] tmp = getBits(s);
-        if (tmp[6] == 0 && tmp[7] == 0) res = 8;
-        else res = tmp[6] != 0 ? 10 : 12;
-        return res;
+        return tmp[6] == 0 && tmp[7] == 0;
     }
 
     static List<Integer> archiveMask(String s, int startCount){
@@ -42,18 +40,13 @@ class TemplateStaticMethods {
         return tmp;
     }
 
-    static String calculateDate(String[] arr, int curPos){
+    static String calculateDate(String... arr){
         StringBuilder sb = new StringBuilder();
-        int pos = curPos;
+        int[] incBytes = new int[4];
         for (int i = 0; i < 4; i ++){
-            sb.append(arr[pos++]).append(" ");
+            sb.append(arr[i]).append(" ");
+            incBytes[i] = Integer.parseInt(arr[i],16);
         }
-        int[] incBytes = {
-                Integer.parseInt(arr[curPos++],16),
-                Integer.parseInt(arr[curPos++],16),
-                Integer.parseInt(arr[curPos++],16),
-                Integer.parseInt(arr[curPos++],16)
-        };
         long res = 0;
         for (int i = incBytes.length-1; i >= 0; i--){
             res |= incBytes[i];
@@ -62,7 +55,23 @@ class TemplateStaticMethods {
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(res * 1000);
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-y / HH:mm:ss / z Z");
-        sb.append("- временная метка архива: ").append(sdf.format(calendar.getTime()));
+        sb.append("- временная метка архива: ").append(sdf.format(calendar.getTime())).append("\n");
+        return sb.toString();
+    }
+
+    static String calculateTiValue(Integer index, String... arr){
+        StringBuilder sb = new StringBuilder();
+        int[] incBytes = new int[arr.length];
+        for (int i = 0; i < arr.length; i++){
+            sb.append(arr[i]).append(" ");
+            incBytes[i] = Integer.parseInt(arr[i],16);
+        }
+        int res = 0;
+        for (int i = incBytes.length-1; i >= 0; i--){
+            res |= incBytes[i];
+            if (i != 0) res <<= 8;
+        }
+        sb.append("- int значение параметра № ").append(index).append(": ").append(res).append("\n");
         return sb.toString();
     }
 }

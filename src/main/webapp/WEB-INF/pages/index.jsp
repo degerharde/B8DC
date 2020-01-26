@@ -7,16 +7,22 @@
 <title>B8DC</title>
 </head>
 <body>
-<h2>INPUT:</h2>
+<div id="page">
 <c:url value="/" var="var"/>
+<div id="input">
+<h2>INPUT:</h2>
 <form action="${var}" method="POST">
-<textarea name="convert" rows="20" cols="60" placeholder="Скопировать пакет сюда..."/>
+<textarea name="convert" rows="30" cols="60" placeholder="Скопировать пакет сюда..."/>
 </textarea>
 <input type="submit" value="Отправить" >
 </form>
+</div>
+<div id="output">
 <h2>RESULT:</h2>
-<textarea name="outData" rows="20" cols="60" placeholder="Результат..." readonly/>
-"${outcome}"
+<textarea name="outData" rows="30" cols="89" placeholder="Результат..." readonly/>
+${outcome}
 </textarea>
+</div>
+</div>
 </body>
 </html>

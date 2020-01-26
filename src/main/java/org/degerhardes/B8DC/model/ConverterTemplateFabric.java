@@ -5,7 +5,7 @@ public class ConverterTemplateFabric {
         switch (inc) {
             case "BB" : return new ConverterTemplateBB();
             case "B8" : return new ConverterTemplateB8();
-            default: return null;
+            default: throw new IllegalArgumentException(inc);
         }
     }
 }

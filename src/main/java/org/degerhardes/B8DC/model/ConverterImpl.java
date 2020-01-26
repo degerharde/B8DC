@@ -14,7 +14,9 @@ public class ConverterImpl implements Converter{
             command = stringToArray(inc);
             converterTemplate = new ConverterTemplateFabric().generateTemplate(command[4]);
             return converterTemplate.convert(command);
-        } catch (StringIndexOutOfBoundsException e) {return "Некорректный пакет";}
+        }
+        catch (StringIndexOutOfBoundsException e) {return "Некорректный пакет.";}
+        catch (IllegalArgumentException e){return e.getMessage()+" команда не поддерживается.";}
         catch (Exception e) {return "Ошибка разбора пакета:\n"+e.toString();}
     }
 
