@@ -2,11 +2,8 @@ package org.degerhardes.B8DC.model;
 
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+
 
 @Component
 public class ConverterImpl implements Converter{
@@ -16,9 +13,9 @@ public class ConverterImpl implements Converter{
         try {
             command = stringToArray(inc);
             converterTemplate = new ConverterTemplateFabric().generateTemplate(command[4]);
-            converterTemplate.convert(command);
-            return Arrays.toString(command);
+            return converterTemplate.convert(command);
         } catch (StringIndexOutOfBoundsException e) {return "Некорректный пакет";}
+        catch (Exception e) {return "Ошибка разбора пакета:\n"+e.toString();}
     }
 
 
