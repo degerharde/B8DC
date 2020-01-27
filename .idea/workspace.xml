@@ -5,11 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/ConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/ConverterImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/ConverterTemplateB8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/ConverterTemplateB8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/ConverterTemplateFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/ConverterTemplateFabric.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/TemplateStaticMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/TemplateStaticMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/res/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/res/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,6 +190,32 @@
     <option name="localTasksCounter" value="8" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Hello world statement. No logic, only working webapp." />
     <MESSAGE value="WEB page backbone created. No logic, only working webapp." />
@@ -223,22 +246,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580054942607" />
-    <state width="1322" height="195" key="GridCell.Tab.0.bottom" timestamp="1580061545236">
+    <state width="1322" height="168" key="GridCell.Tab.0.bottom" timestamp="1580158963800">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="195" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580061545236" />
-    <state width="1322" height="195" key="GridCell.Tab.0.center" timestamp="1580061545236">
+    <state width="1322" height="168" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580158963800" />
+    <state width="1322" height="168" key="GridCell.Tab.0.center" timestamp="1580158963800">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="195" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580061545236" />
-    <state width="1322" height="195" key="GridCell.Tab.0.left" timestamp="1580061545236">
+    <state width="1322" height="168" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580158963800" />
+    <state width="1322" height="168" key="GridCell.Tab.0.left" timestamp="1580158963799">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="195" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580061545236" />
-    <state width="1322" height="195" key="GridCell.Tab.0.right" timestamp="1580061545236">
+    <state width="1322" height="168" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580158963799" />
+    <state width="1322" height="168" key="GridCell.Tab.0.right" timestamp="1580158963800">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="195" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580061545236" />
+    <state width="1322" height="168" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580158963800" />
     <state width="1322" height="217" key="GridCell.Tab.1.bottom" timestamp="1580057346484">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -263,5 +286,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1578509586095" />
+    <state x="424" y="104" key="git4idea.rebase.GitRebaseEditor" timestamp="1580158372659">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="424" y="104" key="git4idea.rebase.GitRebaseEditor/0.0.1366.728@0.0.1366.728" timestamp="1580158372659" />
   </component>
 </project>

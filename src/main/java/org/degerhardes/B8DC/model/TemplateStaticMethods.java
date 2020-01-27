@@ -54,7 +54,7 @@ class TemplateStaticMethods {
         }
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(res * 1000);
-        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-y / HH:mm:ss / z Z");
+        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-y / HH:mm:ss (z Z)");
         sb.append("- временная метка архива: ").append(sdf.format(calendar.getTime())).append("\n");
         return sb.toString();
     }
@@ -71,7 +71,7 @@ class TemplateStaticMethods {
             res |= incBytes[i];
             if (i != 0) res <<= 8;
         }
-        sb.append("- int значение параметра № ").append(index).append(": ").append(res).append("\n");
+        sb.append("- АЦП параметра № ").append(index).append(": ").append(res).append("\n");
         return sb.toString();
     }
 }

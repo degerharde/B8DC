@@ -8,10 +8,7 @@ import static org.degerhardes.B8DC.model.TemplateStaticMethods.*;
 
 
 public class ConverterTemplateB8 implements ConverterTemplate {
-    private boolean answerFormat;
-    private boolean tiDigitCap;
     private int tiCount;
-    private int tsCount;
     private int tiiCount;
     private int curPos;
     private List<Integer> tiArchive;
@@ -19,10 +16,10 @@ public class ConverterTemplateB8 implements ConverterTemplate {
 
     @Override
     public String convert(String[] arr) {
-        answerFormat = getBits(arr[6])[0] == 0;
-        tiDigitCap = getTIDigitCap(arr[7]);
+        boolean answerFormat = getBits(arr[6])[0] == 0;
+        boolean tiDigitCap = getTIDigitCap(arr[7]);
         tiCount = getTILength(arr[7]);
-        tsCount = convertToDec(arr[8]) * 8;
+        int tsCount = convertToDec(arr[8]) * 8;
         tiiCount = convertToDec(arr[9]);
         curPos = 9;
 
@@ -72,15 +69,8 @@ public class ConverterTemplateB8 implements ConverterTemplate {
             for (int iti = 0; iti < tiArchive.size();){
                 sb.append(arr[++curPos]).append(" - ");
                 for (int el : getBits(arr[curPos])){
-                    sb.append(++iti).append(": ").append(el != 0).append(", ");
-                }
-                sb.deleteCharAt(sb.length()-2).append("\n");
-            }
-            sb.append("Маски достоверности архивируемых ТИИ:\n");
-            for (int iti = 0; iti < tiiArchive.size();){
-                sb.append(arr[++curPos]).append(" - ");
-                for (int el : getBits(arr[curPos])){
-                    sb.append(++iti).append(": ").append(el != 0).append(", ");
+                    if (iti >= tiArchive.size()) break;
+                    sb.append(tiArchive.get(iti++)).append(": ").append(el != 0).append(", ");
                 }
                 sb.deleteCharAt(sb.length()-2).append("\n");
             }
@@ -89,6 +79,15 @@ public class ConverterTemplateB8 implements ConverterTemplate {
                 sb.append(arr[++curPos]).append(" - ");
                 for (int el : getBits(arr[curPos])){
                     sb.append(++its).append(": ").append(el != 0).append(", ");
+                }
+                sb.deleteCharAt(sb.length()-2).append("\n");
+            }
+            sb.append("Маски достоверности архивируемых ТИИ:\n");
+            for (int iti = 0; iti < tiiArchive.size();){
+                sb.append(arr[++curPos]).append(" - ");
+                for (int el : getBits(arr[curPos])){
+                    if (iti >= tiiArchive.size()) break;
+                    sb.append(tiiArchive.get(iti++)).append(": ").append(el != 0).append(", ");
                 }
                 sb.deleteCharAt(sb.length()-2).append("\n");
             }
