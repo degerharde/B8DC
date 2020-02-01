@@ -24,7 +24,7 @@ public class ConverterTemplateB8 implements ConverterTemplate {
         curPos = 9;
 
         StringBuilder sb = new StringBuilder();
-        sb.append(arr[0]).append(" ").append(arr[1]).append(" - LI пакета\n")
+        sb.append(arr[0]).append(" ").append(arr[1]).append(" - длинна пакета: ").append(convertToDec(arr[1])).append(" байт\n")
             .append(arr[2]).append(" - адрес получателя (ПУ): ").append(convertToDec(arr[2])).append("\n")
             .append(arr[3]).append(" - адрес отправителя (КП): ").append(convertToDec(arr[3])).append("\n")
             .append(arr[4]).append(" - полученная команда\n")
@@ -43,9 +43,8 @@ public class ConverterTemplateB8 implements ConverterTemplate {
             .append(arr[9]).append(" - количество параметров ТИИ: ").append(tiiCount).append("\n")
             .append(calcArchive(arr,true)).append(" параметры ТИ\n")
             .append(calcArchive(arr, false)).append(" параметры ТИИ\n");
-        int archSize = 4 + tiCount * 2 + tiiArchive.size()*5;
-        archSize += tiDigitCap ? (tiCount*3) : (tiCount*2);
-        for (int i = 1; curPos < arr.length - archSize; i++) {
+        int archSize = (4 + tsCount * 2) + (tiiArchive.size() * 5) + (tiDigitCap ? (tiCount*3) : (tiCount*2));
+        for (int i = 1; curPos < convertToDec(arr[1]) - archSize; i++) {
             sb.append("\nАрхив № ").append(i).append("\n");
             if (answerFormat || i == 1) sb.append(calculateDate(arr[++curPos], arr[++curPos], arr[++curPos], arr[++curPos]));
             sb.append("Значение параметров ТИ:\n");
@@ -53,7 +52,7 @@ public class ConverterTemplateB8 implements ConverterTemplate {
                 if (!tiDigitCap) sb.append(calculateTiValue(el, arr[++curPos], arr[++curPos]));
                 else sb.append(calculateTiValue(el, arr[++curPos]));
             }
-            sb.append("Значения всех ТС:\n");
+            sb.append("Значения параметров ТС:\n");
             for (int its = 0; its < tsCount;){
                 sb.append(arr[++curPos]).append(" - ");
                 for (int el : getBits(arr[curPos])){

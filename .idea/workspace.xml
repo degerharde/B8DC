@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03904c62-a7a7-4b5a-af56-a5f2722c8b87" name="Default Changelist" comment="">
+    <list default="true" id="03904c62-a7a7-4b5a-af56-a5f2722c8b87" name="Default Changelist" comment="squash! Added 3A and BB commands">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/ConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/ConverterImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/ConverterTemplateB8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/ConverterTemplateB8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/TemplateStaticMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/TemplateStaticMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/ConverterTemplateBB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/ConverterTemplateBB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/ConverterTemplateFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/ConverterTemplateFabric.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +25,13 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="cc74b91be763175007c8918814de0187c2807118" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -47,9 +56,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -187,7 +196,21 @@
       <option name="project" value="LOCAL" />
       <updated>1580054948907</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="UX improvement">
+      <created>1580159057754</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1580159057754</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added 3A and BB commands">
+      <created>1580550202762</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1580550202762</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,7 +218,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -223,13 +248,19 @@
     <MESSAGE value="Add Model with 2 Templates" />
     <MESSAGE value="Working View" />
     <MESSAGE value="Half B8 class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Half B8 class" />
+    <MESSAGE value="UX improvement" />
+    <MESSAGE value="Added 3A and BB commands" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added 3A and BB commands" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="0" width="816" height="728" key="#Intentions" timestamp="1579582784430">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="0" width="816" height="728" key="#Intentions/0.0.1366.728@0.0.1366.728" timestamp="1579582784430" />
+    <state x="275" y="21" key="#Project_Structure" timestamp="1580541226613">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="21" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1580541226613" />
     <state x="413" y="117" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1578502478904">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -242,26 +273,34 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1578514068090" />
-    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1580054942607">
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1580550709132">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580054942607" />
-    <state width="1322" height="168" key="GridCell.Tab.0.bottom" timestamp="1580158963800">
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1580550709132" />
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1580550381159">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="168" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580158963800" />
-    <state width="1322" height="168" key="GridCell.Tab.0.center" timestamp="1580158963800">
+    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1580550381159" />
+    <state x="386" y="109" key="FileChooserDialogImpl" timestamp="1580542324861">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="168" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580158963800" />
-    <state width="1322" height="168" key="GridCell.Tab.0.left" timestamp="1580158963799">
+    <state x="386" y="109" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580542324861" />
+    <state width="1322" height="123" key="GridCell.Tab.0.bottom" timestamp="1580550208999">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="168" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580158963799" />
-    <state width="1322" height="168" key="GridCell.Tab.0.right" timestamp="1580158963800">
+    <state width="1322" height="123" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580550208999" />
+    <state width="1322" height="123" key="GridCell.Tab.0.center" timestamp="1580550208999">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="168" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580158963800" />
+    <state width="1322" height="123" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580550208999" />
+    <state width="1322" height="123" key="GridCell.Tab.0.left" timestamp="1580550208999">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="123" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580550208999" />
+    <state width="1322" height="123" key="GridCell.Tab.0.right" timestamp="1580550208999">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="123" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580550208999" />
     <state width="1322" height="217" key="GridCell.Tab.1.bottom" timestamp="1580057346484">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -282,10 +321,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="213" y="17" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1578501471242" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1578509586095">
+    <state x="184" y="0" key="SettingsEditor" timestamp="1580542648743">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1578509586095" />
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1580542648743" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1580541352289">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1580541352289" />
     <state x="424" y="104" key="git4idea.rebase.GitRebaseEditor" timestamp="1580158372659">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
