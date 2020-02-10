@@ -17,7 +17,7 @@ public class ConverterTemplate80 implements ConverterTemplate {
                 .append(arr[3]).append(" - адрес отправителя (КП): ").append(convertToDec(arr[3])).append("\n")
                 .append(arr[4]).append(" - полученная команда\n")
                 .append(arr[5]).append(" - количество параметров ТИ: ").append(tiCount)
-                .append(", разрядность в 1 байт?: ").append(tiDigitCap).append("\n")
+                .append(tiDigitCap ? ", разрядность в 1 байт\n" : ", разрядность в 2 байта\n")
                 .append(arr[6]).append(" - количество параметров ТС: ").append(tsCount).append("\n")
                 .append(arr[7]).append(" - количество параметров ТИИ: ").append(tiiCount).append("\n")
                 .append("Значение параметров ТИ:\n");

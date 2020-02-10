@@ -21,7 +21,7 @@ public class ConverterTemplateBB implements ConverterTemplate {
                 .append(arr[5]).append(arr[5].equals("00") ? " - ошибок нет\n" : " - ошибка в пакете;\n")
                 .append(sb.append(calculateDate(arr[6], arr[7], arr[8], arr[9])))
                 .append(arr[10]).append(" - количество параметров ТИ: ").append(tiCount)
-                .append(", разрядность в 1 байт?: ").append(tiDigitCap).append("\n")
+                .append(tiDigitCap ? ", разрядность в 1 байт\n" : ", разрядность в 2 байта\n")
                 .append(arr[11]).append(" - количество параметров ТС: ").append(tsCount).append("\n")
                 .append(arr[12]).append(" - количество параметров ТИИ: ").append(tiiCount).append("\n")
                 .append("Значение параметров ТИ:\n");

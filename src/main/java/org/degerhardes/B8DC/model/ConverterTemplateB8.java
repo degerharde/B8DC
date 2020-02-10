@@ -38,7 +38,7 @@ public class ConverterTemplateB8 implements ConverterTemplate {
                 .append(getBits(arr[6])[7] != 0 ? ".  буфера обмена\n" : "\n");
         }
         sb.append(arr[7]).append(" - количество параметров ТИ: ").append(tiCount)
-            .append(", разрядность в 1 байт?: ").append(tiDigitCap).append("\n")
+            .append(tiDigitCap ? ", разрядность в 1 байт\n" : ", разрядность в 2 байта\n")
             .append(arr[8]).append(" - количество параметров ТС: ").append(tsCount).append("\n")
             .append(arr[9]).append(" - количество параметров ТИИ: ").append(tiiCount).append("\n")
             .append(calcArchive(arr,true)).append(" параметры ТИ\n")
