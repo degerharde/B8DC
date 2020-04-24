@@ -19,7 +19,7 @@ public class ConverterTemplateBB implements ConverterTemplate {
                 .append(arr[3]).append(" - адрес отправителя (КП): ").append(convertToDec(arr[3])).append("\n")
                 .append(arr[4]).append(" - полученная команда\n")
                 .append(arr[5]).append(arr[5].equals("00") ? " - ошибок нет\n" : " - ошибка в пакете;\n")
-                .append(sb.append(calculateDate(arr[6], arr[7], arr[8], arr[9])))
+                .append(calculateDate(arr[6], arr[7], arr[8], arr[9]))
                 .append(arr[10]).append(" - количество параметров ТИ: ").append(tiCount)
                 .append(tiDigitCap ? ", разрядность в 1 байт\n" : ", разрядность в 2 байта\n")
                 .append(arr[11]).append(" - количество параметров ТС: ").append(tsCount).append("\n")

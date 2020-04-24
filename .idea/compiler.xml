@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="B8DL" />
+        <module name="B8DC" />
       </profile>
     </annotationProcessing>
   </component>

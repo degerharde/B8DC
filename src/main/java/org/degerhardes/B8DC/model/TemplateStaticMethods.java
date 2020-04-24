@@ -22,7 +22,7 @@ class TemplateStaticMethods {
     }
 
     static int getTILength(String s){
-        return Arrays.stream(getBits(s)).limit(5).sum();
+        return Arrays.stream(getBits(s)).limit(6).sum();
     }
 
     static boolean getTIDigitCap(String s){
