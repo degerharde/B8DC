@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:b8dc" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="03904c62-a7a7-4b5a-af56-a5f2722c8b87" name="Default Changelist" comment="little text fixes">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="03904c62-a7a7-4b5a-af56-a5f2722c8b87" name="Default Changelist" comment="TI length &amp;&amp; doubling bug fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/TemplateStaticMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/TemplateStaticMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/ConverterTemplateB8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/ConverterTemplateB8.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +145,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578495521435</updated>
-      <workItem from="1587741200043" duration="999000" />
+      <workItem from="1587741200043" duration="2012000" />
+      <workItem from="1588854153755" duration="2137000" />
     </task>
     <task id="LOCAL-00001" summary="Hello world statement. No logic, only working webapp.">
       <created>1578503446359</created>
@@ -223,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581364469649</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="TI length &amp;&amp; doubling bug fix">
+      <created>1587742535631</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1587742535631</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,13 +291,10 @@
     <MESSAGE value="Move to 13 Java" />
     <MESSAGE value="Added A2 and 80" />
     <MESSAGE value="little text fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="little text fixes" />
+    <MESSAGE value="TI length &amp;&amp; doubling bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="TI length &amp;&amp; doubling bug fix" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="0" width="816" height="728" key="#Intentions" timestamp="1579582784430">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="275" y="0" width="816" height="728" key="#Intentions/0.0.1366.728@0.0.1366.728" timestamp="1579582784430" />
     <state x="275" y="21" key="#Notifications" timestamp="1580753496559">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -291,6 +311,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1580755053516" />
+    <state x="148" y="137" key="#org.jetbrains.debugger.memory.view.InstancesWindow" timestamp="1587742337950">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="148" y="137" key="#org.jetbrains.debugger.memory.view.InstancesWindow/0.0.1366.728/1366.-190.1920.1040@1366.-190.1920.1040" timestamp="1587742337950" />
     <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1581364467172">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -307,62 +331,71 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="480" y="229" key="Github.CreatePullRequestDialog/0.0.1366.728@0.0.1366.728" timestamp="1580753475996" />
-    <state width="1876" height="277" key="GridCell.Tab.0.bottom" timestamp="1587742082330">
+    <state width="1876" height="354" key="GridCell.Tab.0.bottom" timestamp="1588856263475">
       <screen x="1366" y="-190" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-190.1920.1040@1366.-190.1920.1040" timestamp="1587742082330" />
+    <state width="1322" height="217" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-190.1920.1040@0.0.1366.728" timestamp="1588854810879" />
+    <state width="1876" height="354" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.-190.1920.1040@1366.-190.1920.1040" timestamp="1588856263475" />
     <state width="1322" height="124" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581614423969" />
-    <state width="1876" height="277" key="GridCell.Tab.0.center" timestamp="1587742082330">
+    <state width="1876" height="354" key="GridCell.Tab.0.center" timestamp="1588856263474">
       <screen x="1366" y="-190" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.center/0.0.1366.728/1366.-190.1920.1040@1366.-190.1920.1040" timestamp="1587742082330" />
+    <state width="1322" height="217" key="GridCell.Tab.0.center/0.0.1366.728/1366.-190.1920.1040@0.0.1366.728" timestamp="1588854810879" />
+    <state width="1876" height="354" key="GridCell.Tab.0.center/0.0.1366.728/1366.-190.1920.1040@1366.-190.1920.1040" timestamp="1588856263474" />
     <state width="1322" height="124" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581614423969" />
-    <state width="1876" height="277" key="GridCell.Tab.0.left" timestamp="1587742082329">
+    <state width="1876" height="354" key="GridCell.Tab.0.left" timestamp="1588856263474">
       <screen x="1366" y="-190" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.left/0.0.1366.728/1366.-190.1920.1040@1366.-190.1920.1040" timestamp="1587742082329" />
+    <state width="1322" height="217" key="GridCell.Tab.0.left/0.0.1366.728/1366.-190.1920.1040@0.0.1366.728" timestamp="1588854810879" />
+    <state width="1876" height="354" key="GridCell.Tab.0.left/0.0.1366.728/1366.-190.1920.1040@1366.-190.1920.1040" timestamp="1588856263474" />
     <state width="1322" height="124" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581614423969" />
-    <state width="1876" height="277" key="GridCell.Tab.0.right" timestamp="1587742082330">
+    <state width="1876" height="354" key="GridCell.Tab.0.right" timestamp="1588856263474">
       <screen x="1366" y="-190" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.right/0.0.1366.728/1366.-190.1920.1040@1366.-190.1920.1040" timestamp="1587742082330" />
+    <state width="1322" height="217" key="GridCell.Tab.0.right/0.0.1366.728/1366.-190.1920.1040@0.0.1366.728" timestamp="1588854810879" />
+    <state width="1876" height="354" key="GridCell.Tab.0.right/0.0.1366.728/1366.-190.1920.1040@1366.-190.1920.1040" timestamp="1588856263474" />
     <state width="1322" height="124" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581614423969" />
-    <state width="1876" height="342" key="GridCell.Tab.1.bottom" timestamp="1587742016525">
+    <state width="1876" height="354" key="GridCell.Tab.1.bottom" timestamp="1588856263475">
       <screen x="1366" y="-190" width="1920" height="1040" />
     </state>
-    <state width="1876" height="342" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.-190.1920.1040@1366.-190.1920.1040" timestamp="1587742016525" />
-    <state width="1322" height="217" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580057346484" />
-    <state width="1876" height="342" key="GridCell.Tab.1.center" timestamp="1587742016525">
+    <state width="1322" height="217" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.-190.1920.1040@0.0.1366.728" timestamp="1588854811696" />
+    <state width="1876" height="354" key="GridCell.Tab.1.bottom/0.0.1366.728/1366.-190.1920.1040@1366.-190.1920.1040" timestamp="1588856263475" />
+    <state width="1876" height="354" key="GridCell.Tab.1.center" timestamp="1588856263475">
       <screen x="1366" y="-190" width="1920" height="1040" />
     </state>
-    <state width="1876" height="342" key="GridCell.Tab.1.center/0.0.1366.728/1366.-190.1920.1040@1366.-190.1920.1040" timestamp="1587742016525" />
-    <state width="1322" height="217" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1580057346484" />
-    <state width="1876" height="342" key="GridCell.Tab.1.left" timestamp="1587742016524">
+    <state width="1322" height="217" key="GridCell.Tab.1.center/0.0.1366.728/1366.-190.1920.1040@0.0.1366.728" timestamp="1588854811696" />
+    <state width="1876" height="354" key="GridCell.Tab.1.center/0.0.1366.728/1366.-190.1920.1040@1366.-190.1920.1040" timestamp="1588856263475" />
+    <state width="1876" height="354" key="GridCell.Tab.1.left" timestamp="1588856263475">
       <screen x="1366" y="-190" width="1920" height="1040" />
     </state>
-    <state width="1876" height="342" key="GridCell.Tab.1.left/0.0.1366.728/1366.-190.1920.1040@1366.-190.1920.1040" timestamp="1587742016524" />
-    <state width="1322" height="217" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1580057346484" />
-    <state width="1876" height="342" key="GridCell.Tab.1.right" timestamp="1587742016525">
+    <state width="1322" height="217" key="GridCell.Tab.1.left/0.0.1366.728/1366.-190.1920.1040@0.0.1366.728" timestamp="1588854811696" />
+    <state width="1876" height="354" key="GridCell.Tab.1.left/0.0.1366.728/1366.-190.1920.1040@1366.-190.1920.1040" timestamp="1588856263475" />
+    <state width="1876" height="354" key="GridCell.Tab.1.right" timestamp="1588856263475">
       <screen x="1366" y="-190" width="1920" height="1040" />
     </state>
-    <state width="1876" height="342" key="GridCell.Tab.1.right/0.0.1366.728/1366.-190.1920.1040@1366.-190.1920.1040" timestamp="1587742016525" />
-    <state width="1322" height="217" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1580057346484" />
+    <state width="1322" height="217" key="GridCell.Tab.1.right/0.0.1366.728/1366.-190.1920.1040@0.0.1366.728" timestamp="1588854811696" />
+    <state width="1876" height="354" key="GridCell.Tab.1.right/0.0.1366.728/1366.-190.1920.1040@1366.-190.1920.1040" timestamp="1588856263475" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1580555282207">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1580555282207" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1580755759996">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="1753" y="-54" key="Vcs.Push.Dialog.v2" timestamp="1587742572723">
+      <screen x="1366" y="-190" width="1920" height="1040" />
     </state>
+    <state x="1753" y="-54" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.-190.1920.1040@1366.-190.1920.1040" timestamp="1587742572723" />
     <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1580755759996" />
+    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1587742368932">
+      <screen x="1366" y="-190" width="1920" height="1040" />
+    </state>
+    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1366.728/1366.-190.1920.1040@1366.-190.1920.1040" timestamp="1587742368932" />
+    <state x="2135" y="242" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587742554883">
+      <screen x="1366" y="-190" width="1920" height="1040" />
+    </state>
+    <state x="2135" y="242" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.-190.1920.1040@1366.-190.1920.1040" timestamp="1587742554883" />
     <state x="2056" y="84" key="extract.method.dialog" timestamp="1587742137869">
       <screen x="1366" y="-190" width="1920" height="1040" />
     </state>
     <state x="2056" y="84" key="extract.method.dialog/0.0.1366.728/1366.-190.1920.1040@1366.-190.1920.1040" timestamp="1587742137869" />
-    <state x="424" y="104" key="git4idea.rebase.GitRebaseEditor" timestamp="1580158372659">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="424" y="104" key="git4idea.rebase.GitRebaseEditor/0.0.1366.728@0.0.1366.728" timestamp="1580158372659" />
     <state x="65" y="64" key="new project wizard" timestamp="1583263666746">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -372,11 +405,16 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/Test.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/main/java/org/degerhardes/B8DC/model/ConverterTemplateB8.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="sb" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

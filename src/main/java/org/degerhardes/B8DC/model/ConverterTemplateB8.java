@@ -43,8 +43,9 @@ public class ConverterTemplateB8 implements ConverterTemplate {
             .append(arr[9]).append(" - количество параметров ТИИ: ").append(tiiCount).append("\n")
             .append(calcArchive(arr,true)).append(" параметры ТИ\n")
             .append(calcArchive(arr, false)).append(" параметры ТИИ\n");
-        int archSize = (4 + tsCount * 2) + (tiiArchive.size() * 5) + (tiDigitCap ? (tiCount*3) : (tiCount*2));
-        for (int i = 1; curPos < convertToDec(arr[1]) - archSize; i++) {
+        int archSize = 4 + (tsCount / 8 * 2) + (tiiArchive.size() * 5) + (tiDigitCap ? (tiArchive.size()*3) : (tiArchive.size()*2));
+        int li = convertToDec(arr[1]);
+        for (int i = 1; curPos <= convertToDec(arr[1]) - archSize; i++) {
             sb.append("\nАрхив № ").append(i).append("\n");
             if (answerFormat || i == 1) sb.append(calculateDate(arr[++curPos], arr[++curPos], arr[++curPos], arr[++curPos]));
             sb.append("Значение параметров ТИ:\n");
